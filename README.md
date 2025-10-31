@@ -15,12 +15,12 @@ The architecture leverages **Azure Data Factory**, **Azure Data Lake Storage**, 
 
 ```mermaid
 graph TD
-A[Azure SQL Database 🗄️] -->|Extract| B[Azure Data Factory ⚙️]
-C[REST API 🌐] -->|Extract| B
-B -->|Load Parquet| D[Azure Data Lake Storage 🪣]
-D -->|Read| E[Azure Databricks 🔥]
+A[Azure SQL Database ] -->|Extract| B[Azure Data Factory ]
+C[REST API ] -->|Extract| B
+B -->|Load Parquet| D[Azure Data Lake Storage ]
+D -->|Read| E[Azure Databricks ]
 E -->|Transform & Model| F[Bronze → Silver → Gold Layers]
-F -->|KPI Tables| G[Power BI 📊]
+F -->|KPI Tables| G[Power BI ]
 
 ```
 <img width="967" height="476" alt="Screenshot 2025-10-31 142550" src="https://github.com/user-attachments/assets/3c17b9fe-de0d-4a36-947e-2c772a6e9bfe" />
